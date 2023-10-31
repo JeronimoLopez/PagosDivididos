@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PagosDivididos</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="event_name">Event</string>
+    <string name="expenses_name">Expenses</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_add_member">Add member</string>
+    <string name="no_events_message">There are no events yet!</string>
+    <string name="add_event_title">Add the title here</string>
+    <string name="expense_title">Expense title</string>
+    <string name="expense_title_hint">Insert the title here</string>
+    <string name="delete_event_prompt">Are you sure you want to delete this item?</string>
+    <string name="member_title">Member</string>
+    <string name="expenses_list_title">Expenses List Title</string>
+    <string name="has_to_pay">has to pay</string>
+    <string name="to">to</string>
+    <string name="and">and</string>
+    <string name="no_member_selected">You haven\'t selected a member to pay</string>
+    <string name="is_owed">is owed</string>
+    <string name="for_string">for</string>
+    <string name="expense_report_subject">PagosDivididos Expense Report</string>
+    <string name="add_expense_snackbar">The expense doesn\'t have a name</string>
+    <string name="add_member_snackbar">The member doesn\'t have a name</string>
+    <string name="snackbar_dismiss">Dismiss</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="empty_title_snackbar">The title is empty</string>
+    <string name="sharing_app_snackbar">No apps available for sharing</string>
+    <string name="delete_confirmation">Delete Confirmation</string>
+    <string name="share_notification">Share Notification</string>
+    <string name="no_member_expense">You haven\'t selected a member for the following expense: </string>
+    <string name="no_expense">You haven\'t added any expenses </string>
+</resources>

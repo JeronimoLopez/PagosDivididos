@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventListFragment">
+
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.android.pagosdivididos.eventlist.EventListFragment"
+        android:label="EventListFragment"
+        tools:layout="@layout/event_list_fragment">
+        <action
+            android:id="@+id/show_expenses_list"
+            app:destination="@id/expensesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesListFragment"
+        android:name="com.android.pagosdivididos.expensesList.ExpensesListFragment"
+        android:label="ExpensesListFragment"
+        tools:layout="@layout/expenses_list_fragment">
+        <argument
+            android:name="id"
+            app:argType="java.util.UUID" />
+        <action
+            android:id="@+id/show_expenses_detail"
+            app:destination="@id/expensesDetailFragment" />
+        <action
+            android:id="@+id/delete_event"
+            app:destination="@id/eventListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesDetailFragment"
+        android:name="com.android.pagosdivididos.expensesDetail.ExpensesDetailFragment"
+        android:label="ExpensesDetailFragment"
+        tools:layout="@layout/expenses_detail_fragment">
+        <argument
+            android:name="id"
+            app:argType="java.util.UUID" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="expense"
+            app:argType="com.android.pagosdivididos.database.Expenses" />
+    </fragment>
+</navigation>
