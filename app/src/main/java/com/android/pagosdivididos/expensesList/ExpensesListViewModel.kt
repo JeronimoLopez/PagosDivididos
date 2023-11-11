@@ -88,6 +88,7 @@ class ExpensesListViewModel(id: UUID) : ViewModel() {
     }
 
     fun removeMember(memberToRemove: Member) {
+
         _events.value?.let { currentEvent ->
             val memberList = currentEvent.memberList.toMutableList()
             memberList.remove(memberToRemove)
